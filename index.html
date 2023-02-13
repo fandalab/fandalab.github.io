@@ -1,0 +1,584 @@
+<!-------------CSS---------------->
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 50px;
+  justify-content: center;
+  background-color: #f8f8ff;
+  font-size: 14px;
+  line-height: 20px;
+  color: #636366;
+  font-family: "mr-eaves-sans", sans-serif;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #3b4144;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+h1 {
+  line-height: 60px;
+}
+h2 {
+  font-size: 22px;
+  font-family: "reklame-script", serif;
+}
+h3 {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+h5 {
+  font-size: 13px;
+  line-height: 25px;
+}
+p {
+  font-size: 13px;
+  line-height: 23px;
+}
+.resume {
+  margin: 0 auto;
+  max-width: 850px;
+  min-width: 700px;
+  border: solid #fff 7px;
+  padding: 25px;
+  overflow: hidden;
+}
+.decoration {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(135deg, #DDC4FF, #FFF5C1);
+  border-radius: 70px;
+  position: absolute;
+  transform: rotate(-30deg);
+}
+.decoration:nth-of-type(1) {
+  top: -95px;
+  left: 74%;
+}
+.decoration:nth-of-type(2) {
+  top: 40px;
+  left: 71%;
+  width: 400px;
+}
+.top,.left,.right,.footer {
+  padding: 15px;
+}
+.content {
+  display: flex;
+}
+.left {
+  flex: 5;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.right {
+  flex: 8;
+  padding-left: 40px;
+  border-left: 3px solid #fff;
+}
+.top {
+  display: flex;
+  position:relative;
+  margin-bottom: 20px;
+}
+.footer {
+  margin-top: 30px;
+  padding-left: 40px;
+}
+.myPhoto,.nameCircle {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-image: url("https://i.ibb.co/4tHCrjq/Screen-Shot-2022-03-15-at-2-38-50-PM.png");
+  background-size: 120px 120px;
+  background-position: center;
+}
+.nameCircle {
+  position: absolute;
+  left: 35px;
+  z-index: -1;
+  background: linear-gradient(135deg, #FFF5C1, #DDC4FF);
+  border: none;
+}
+.myName {
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.circle {
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: 1px solid #3b4144;
+  background-size: 90px 90px;
+  background-position: center;
+}
+.circle-image1 {
+  background-image: url("https://raw.githubusercontent.com/chingwenqqq/resume/master/image/passion_feminism.png")
+}
+.circle-image2 {
+  background-image: url("https://i.ibb.co/tXwHZ4w/2.png")
+}
+.circle-image3 {
+  background-image: url("https://i.ibb.co/7yVV6Qh/2-copy.png")
+}
+.circle-image4 {
+  background-image: url("https://i.ibb.co/k5BbCb8/3.png")
+}
+
+.buttons {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.btn {
+  padding: 5px 20px;
+  background-color: #fbfbff;
+  margin-right: 10px;
+  border: 1px solid #636366;
+  font-family: 'Open Sans', sans-serif;
+}
+.btn:hover {
+  background: linear-gradient(135deg, #FFF5C1, #DDC4FF);
+  border: 1px solid #ddd;
+  color: #fff;
+}
+.listPassion {
+  display: flex;
+  flex-wrap: wrap;
+}
+.listPassion > li {
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.listSkill {
+  margin-bottom: 40px;
+}
+.listSkill > ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.listSkill >li {
+  padding-left: 10px;
+}
+.skillLevel {
+  width: 65px;
+  height: 55px;
+  border: 3px solid #dfdfff;
+/*  border-radius: 50%;*/  
+  text-align: center;
+  position: relative;
+  margin-left: 10px;
+  padding-top: 13px;
+  z-index: -2;
+}
+.level1,.level2 {
+  position: absolute;
+  background-color: #F8F8FF;
+  z-index: -1;
+}
+.level1 {
+  width: 35px;
+  height: 30px;
+  left: -3px;
+  top: 22px;
+}
+.level2 {
+  width: 65px;
+  left: -3px;
+  top: -3px;
+  height: 30px;
+}
+.listAward > li {
+  margin-top: 10px;
+  padding-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.footer {
+  position: relative;
+}
+.footerCircle {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, #FFF5C1, #DDC4FF);
+  position: absolute;
+  border-radius: 50%;
+  top: 30px;
+  left: -100px;
+  z-index: -1;
+} 
+.time {
+  padding-left: 30px;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 27px;
+  position: relative;
+}
+.decorationLine {
+  position: absolute;
+  height: 6px;
+  margin-top: 20px;
+  line-height: 35px;
+  font-family: 'Open Sans', sans-serif;
+}
+.decorationCircle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #82d5ff;
+}
+.decorationLine:nth-of-type(1) {
+  width: 35%;
+  top: -20px;
+  left: 20px;
+  background: linear-gradient(135deg, #FFF5C1, #DDC4FF);
+} 
+.decorationCircle:nth-of-type(2) {
+  top: 0px;
+  left: 40%;
+}
+.decorationLine:nth-of-type(3) {
+  width: 50%;
+  left: 36%;
+  top: 0px;
+  background: linear-gradient(135deg, #FFF5C1, #DDC4FF);
+}
+.decorationCircle:nth-of-type(4) {
+  top: 20px;
+  left: 89%;
+}
+.decorationLine:nth-of-type(5) {
+  width: 25%;
+  left: 69%;
+  top: 20px;
+  background: linear-gradient(135deg, #FFF5C1, #DDC4FF);
+} 
+.decorationCircle:nth-of-type(6) {
+  top: 40px;
+  left: 97%;
+}
+.listExperience {
+  display: flex;
+  /*padding-left: 30px;*/
+}
+.listExperience > li {
+  padding-left: 20px;
+  flex: 3;
+}
+.listExperience li ul {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+  padding-left: 15px;
+  border-left: 3px solid #dfdfff;
+/*   background-color: pink; */
+}
+.listExperience > li > ul > li {
+  margin-top: 13px;
+} 
+
+/* @media only screen and (max-width: 700px) {
+body {
+  padding: 0px;
+}
+.resume {
+  width: 100%;
+  min-width: 300px;
+  border: none;
+  padding: 50px;
+}
+.nameCircle {
+  top: 15px;
+  left: 30px;
+}
+.content,.listExperience {
+  display: block;
+}
+.top,.footer {
+  display: inline-block;
+  width: 100%;  
+  margin: 0 auto;
+}
+h4 {
+  margin-top: 30px;
+}
+.myName {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.listPassion > li {
+  width: 25%;
+}
+.right {
+  border: none;
+  padding-left: 30px;
+}
+.footer {
+  padding-left: 30px;
+}
+.time {
+  display: none;
+}
+.listExperience > li {
+    margin-bottom: 30px;
+  } */
+/* @media only screen and (max-width: 500px) {
+.resume {
+  padding: 10px;
+}
+.listPassion > li {
+  width: 50%;
+}
+.skillLevel {
+  width: 60px;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.listAward > li {
+  padding-left: 0px;
+}
+.decoration:nth-of-type(1) {
+  top: -30px;
+  left: 50%;
+  height: 80px;
+}
+.listSkill >li {
+    padding-left: 0px;
+}
+.decoration:nth-of-type(2) {
+  top: 35px;
+  left: 73%;
+}
+
+} */
+    </style>
+</head>
+
+
+
+<!-------------HTML---------------->
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta property="og:title" content="吳之甯 履歷"/>
+    <meta property="og:image" content="https://i.ibb.co/4tHCrjq/Screen-Shot-2022-03-15-at-2-38-50-PM.png"/>
+    <meta property="og:site_name" content="吳之甯 履歷"/>
+    <meta property="og:description" content="I'm a homeschooled student, who cares about my own passions and interest.
+    I take huge priority in making sure I'm choosing a future career that I enjoy, and that I can be as prepared as I possibly can."/>  
+  </head>
+  <body>
+    <div class="resume">
+      <div class="top">
+        <div class="decoration"></div>
+        <div class="decoration"></div>
+        <div class="myPhoto"></div>
+        <div class="nameCircle"></div>
+        <div class="myName">
+          <h1>吳之甯</h1>
+          <h2>Wu Zhin Ning</h2>
+        </div>
+      </div>
+      <div class="content">
+        <div class="left">
+          <h3>
+            Character Creation, creative Arts
+          </h3>
+          <p>I'm a homeschooled student, who cares about my own passions and interest.
+            I take huge priority in making sure I'm choosing a future career that I enjoy, and that I can be as prepared as I possibly can.</p>
+          <div class="buttons">
+            <a class="btn fill" href="https://www.youtube.com/@eric9123" target="_blank">
+              YouTube Channel
+            </a>
+          </div>
+          <div class="block">
+            <h4>Passion</h4>
+            <ul class="listPassion">
+              <li>
+                <div class="circle circle-image2"></div>
+                Baking
+              </li>
+              <li>
+                <div class="circle circle-image3"></div>
+                Creative Arts
+              </li>
+              <li>
+                <div class="circle circle-image4"></div>
+                Character Design
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="block">
+            <h4>Skill</h4>
+            <ul class="listSkill">
+              <li><h5>Coding</h5></li>
+              <ul>
+                <li>
+                  <div class="skillLevel">
+                    <!-- <div class="littleCircle">AI</div> -->
+                    Pandas
+                  </div>
+                </li>
+                <li>
+                  <div class="skillLevel">
+                    <!-- div class="littleCircle">PS</div> -->
+                    Plotly
+                    <div class="level1"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skillLevel">
+                    <!-- <div class="littleCircle">ID</div> -->
+                    DL
+                    <div class="level1"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skillLevel">
+                    <!-- <div class="littleCircle">Sketch</div> -->
+                    YOLO
+                    <div class="level1"></div>
+                  </div>
+                </li>
+              </ul>
+              <li><h5>Creative Arts</h5></li>
+              <ul>
+                <li>
+                  <div class="skillLevel">
+                    Digital Art
+                    <div class="level2"></div>
+                    <div class="level1"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skillLevel">
+                    Traditional Art
+                    <div class="level1"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skillLevel">
+                    Animation
+                    <div class="level0"></div>
+                  </div>
+                </li>
+              </ul>
+              <li><h5>Language</h5></li>
+              <ul>
+                <li>
+                  <div class="skillLevel">
+                    English
+                    <div class="level1"></div>
+                  </div>
+                <!-- </li>
+                <li> 
+                  <div class="skillLevel">
+                    CSS
+                    <div class="level1"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skillLevel">
+                    JS
+                    <div class="level2"></div>
+                    <div class="level1"></div>
+                  </div> -->
+                </li>
+              </ul>
+            </ul>
+            <h4>Award</h4>
+            <ul class="listAward">
+              <li>2022 TOEIC聽讀950/說寫360 (聽力495/閱讀455/口說170/寫作190)</li>
+              <li>2019-21全民英檢 聽/讀中高級 口說中高級</li>
+              <li>2022 科學科普專業英文比賽 資訊與生活 金腦獎</li>
+              <li>2023語言學奧林匹亞競賽甄選</li>
+              <li>2020 學生美展台北區漫畫組佳作 (網美的日常)</li>
+              <li>2020 學生美展台北區水彩組佳作 (孤寂)</li>
+              <li>2018 雄獅薪藝獎徵圖比賽入選獎</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+      </div>
+      <div class="footer">
+        <h4>Experience</h4>
+        <div class="footerCircle"></div>
+        <div class="time">
+          <div class="decorationLine">2019 - Present</div>
+          <div class="decorationCircle"></div>
+        </div>
+  <!--       <div class="footerCircle circle1"></div>
+        <div class="footerCircle circle2"></div> -->
+        <ul class="listExperience">
+          <li class="year">
+            <h5>藏香經典</h5>
+            <h6>日本首飾銷售實習生</h6>
+            <ul>
+              <li>I'm capable of introducing and selling a certain brand of jewelry that I'm in charge of with great ease and little difficulty.</li>
+              <li>I am able to sell other types of jewelry, but I would know less of the brand.</li>
+              <li>I'm the best as selling in fairs, which are more crowded and have higher traffic than a normal setting.</li>
+            </ul>
+          </li>
+          <li class="year">
+            <h5>藏香經典</h5>
+            <h6>店務營運助理</h6>
+            <ul>
+              <li>I mainly shopkeep the store, as well as selling products at every chance I get. </li>
+              <li>Shopkeeping is very different to being charge of just a section of the store, so there is a difference in sales then I usually do.</li>
+            </ul>
+          </li>
+          <li class="year">
+            <h5>藏香經典</h5>
+            <h6>歐洲及日本採購小助手</h6>
+            <ul>
+              <li>I often go abroad, and help with selection of our products.</li>
+            </ul>
+          </li>
+          <li class="year">
+            <h5>藏香首飾悄悄說小助理</h5>
+            <h6>直播助理</h6>
+            <ul>
+              <li>An assistant during streams. In charge of keeping viewers more entertained by striking up conversations.</li>
+              <li>I am also a model for all sorts of jewelry on stream.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Certificates</h2>
+        <br>
+        <img src="https://i.ibb.co/svf9xLL/S-95256630.jpg" alt="404 Not Found";>
+      </div>
+    </div>
+  </body>
